@@ -5,6 +5,11 @@
         static void Main(string[] args)
         {
             var input = System.IO.File.ReadAllLines("input.txt");
+            PartOne(input);
+        }
+
+        public static void PartOne(string[] input)
+        {
             var current = 50;
             var zeroCount = 0;
             foreach (var line in input)
